@@ -18,7 +18,7 @@ if (arduinoConnected){
   });
 }
 
-var server = https.createServer(options, app).listen(3000, function() {
+var server = http.createServer(app).listen(3000, function() {
   console.log('listening on *:3000');
 });
 
