@@ -15,7 +15,7 @@
 
         $(function() {
             socket.on('colorChanged', function (data) {
-                $("#body").css('color', '#'.concat(data));
+                $("#body").css('color', data);
             });
         });
 
