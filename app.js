@@ -56,7 +56,7 @@ io.on('connection', function(socket) {
 
 
   socket.on('changeColor', function(color){
-      socket.emit("colorChanged", color);
+      io.emit("colorChanged", color);
       pushStringToArduino(color);
   });
 
