@@ -5,7 +5,7 @@ var sp = require("serialport");
 var SerialPort = sp.SerialPort;
 
 var arduinoConnected = true; //set to false if no arduino is connected, for testing purposes.
-var COMPORT = "/COM8";      //TODO change CONMPORT to the comport of the arduino
+var COMPORT = "/dev/ttyACM0";      //TODO change CONMPORT to the comport of the arduino
 
 if (arduinoConnected){
   var serialPort = new SerialPort(COMPORT, {
